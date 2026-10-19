@@ -1,0 +1,160 @@
+{
+  "project_identity": {
+    "name": "AKU Online Survey Management System - Pemerintah Kabupaten Buleleng",
+    "persona": "E1 The Anti-AI Designer - Civic Trust, Maximum Readability, High Density Civic Dashboard & High Accessibility Public Survey Wizard",
+    "app_type": "hybrid_fullstack",
+    "theme": "Light Theme (Putih / Light Gray background dengan Buleleng Red Primary/Accent)",
+    "target_audience": "Masyarakat Kabupaten Buleleng (Remaja, Dewasa, Lansia, Pengguna Awam Digital) dan Super Admin Instansi Pemkab Buleleng",
+    "language": "Bahasa Indonesia Formal tapi Ramah dan Mudah Dipahami"
+  },
+  "design_principles": [
+    "STABLE -> RELIABLE -> SIMPLE -> FAST -> SECURE -> EASY TO USE",
+    "Aksesibilitas Tinggi: Tombol besar (min-height 48px), kontras tinggi (APCA/WCAG AA 4.5:1+), font sans-serif karya anak bangsa Plus Jakarta Sans yang sangat legible untuk lansia dan pengguna awam.",
+    "Buleleng Regency Red Accent: Gunakan warna Merah Buleleng (#C81E1E / #DC2626) sebagai identitas visual utama, dipadukan dengan latar bersih (#F8FAFC) dan kartu putih solid (#FFFFFF) ber-shadow halus.",
+    "Desain Komponen Card-Based Modern: Border radius 12px (rounded-xl), 1px stroke border (#E2E8F0), shadow-sm ringan tanpa gradien gelap yang membingungkan.",
+    "Mobile First & Responsive: Touch target ramah jari, sidebar berubah menjadi drawer/mobile menu, tabel horizontal-scrollable, multi-step wizard dengan progress bar jelas.",
+    "Data Testing Ready: Semua elemen interaktif dan data penting wajib memiliki attribute data-testid (misal: data-testid='submit-survey-button')."
+  ],
+  "color_palette": {
+    "primary": {
+      "main": "#C81E1E",
+      "hover": "#991B1B",
+      "active": "#7F1D1D",
+      "light": "#FEE2E2",
+      "subtle": "#FEF2F2",
+      "ring": "rgba(200, 30, 30, 0.25)"
+    },
+    "neutral": {
+      "bg_main": "#F8FAFC",
+      "bg_card": "#FFFFFF",
+      "bg_subtle": "#F1F5F9",
+      "border": "#E2E8F0",
+      "border_strong": "#CBD5E1",
+      "text_primary": "#0F172A",
+      "text_secondary": "#475569",
+      "text_muted": "#64748B",
+      "text_on_red": "#FFFFFF"
+    },
+    "ikm_skm_rating": {
+      "sangat_baik": {
+        "label": "Sangat Baik (A)",
+        "color": "#15803D",
+        "bg": "#DCFCE7",
+        "border": "#86EFAC"
+      },
+      "baik": {
+        "label": "Baik (B)",
+        "color": "#2563EB",
+        "bg": "#DBEAFE",
+        "border": "#93C5FD"
+      },
+      "kurang_baik": {
+        "label": "Kurang Baik (C)",
+        "color": "#D97706",
+        "bg": "#FEF3C7",
+        "border": "#FDE68A"
+      },
+      "tidak_baik": {
+        "label": "Tidak Baik (D)",
+        "color": "#DC2626",
+        "bg": "#FEE2E2",
+        "border": "#FCA5A5"
+      }
+    },
+    "charts": {
+      "primary_red": "#C81E1E",
+      "secondary_blue": "#2563EB",
+      "emerald_green": "#059669",
+      "amber_yellow": "#D97706",
+      "purple_accent": "#7C3AED",
+      "slate_gray": "#64748B"
+    }
+  },
+  "typography": {
+    "font_family_heading": "Plus Jakarta Sans, sans-serif",
+    "font_family_body": "Plus Jakarta Sans, sans-serif",
+    "font_family_mono": "JetBrains Mono, monospace",
+    "hierarchy": {
+      "h1_hero": "text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight",
+      "h2_section": "text-2xl sm:text-3xl font-bold tracking-tight text-slate-900",
+      "h3_subsection": "text-lg sm:text-xl font-semibold text-slate-900",
+      "h4_card_title": "text-base sm:text-lg font-semibold text-slate-800",
+      "body_large": "text-lg leading-relaxed text-slate-700",
+      "body_default": "text-base leading-normal text-slate-700",
+      "body_small": "text-sm text-slate-600",
+      "caption": "text-xs font-medium text-slate-500 uppercase tracking-wider"
+    }
+  },
+  "spacing_and_layout": {
+    "container_padding": "px-4 sm:px-6 lg:px-8",
+    "card_padding": "p-5 sm:p-6 lg:p-8",
+    "grid_dashboard": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6",
+    "wizard_container": "max-w-3xl mx-auto px-4 py-6 sm:py-10",
+    "touch_target_min": "min-h-[48px] min-w-[48px] px-4 py-3",
+    "border_radius": "rounded-xl"
+  },
+  "motion_and_animation": {
+    "standard_transition": "transition-all duration-200 ease-in-out",
+    "hover_lift": "hover:-translate-y-0.5 hover:shadow-md transition-all duration-200",
+    "button_active": "active:scale-[0.98] transition-transform duration-150",
+    "reduced_motion": "motion-reduce:transition-none motion-reduce:transform-none",
+    "progress_animation": "transition-all duration-500 ease-out"
+  },
+  "image_urls": {
+    "buleleng_government_hero": "https://images.unsplash.com/photo-1662808782878-941ea16adbdc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwzfHxpbmRvbmVzaWElMjBnb3Zlcm5tZW50JTIwc3VydmV5JTIwaGVhZGVyJTIwYmVudG98ZW58MHx8fHwxNzkxMjU2MzUxfDA&ixlib=rb-4.1.0&q=85",
+    "community_feedback": "https://images.pexels.com/photos/7831174/pexels-photo-7831174.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "bali_buleleng_nature": "https://images.unsplash.com/photo-1558005530-a7958896ec60?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHxfHxpbmRvbmVzaWElMjBnb3Zlcm5tZW50fGVufDB8fHx8MTc5MTI1NjM1MXAw&ixlib=rb-4.1.0&q=85"
+  },
+  "key_components_and_pages": {
+    "public_survey_wizard": {
+      "steps": [
+        "Informasi & Petunjuk",
+        "Data Diri Responden",
+        "Pertanyaan Indikator SKM",
+        "Saran & Masukan",
+        "Review Jawaban",
+        "Konfirmasi & Submit",
+        "Halaman Sukses dengan Kode Referensi & Checkmark Animation"
+      ],
+      "closed_state": "Halaman Pengumuman 'Survei Sedang Ditutup' dengan info kontak dinas Pemkab Buleleng",
+      "ux_features": "Stepper bar angka dengan persentase progress, tombol Lanjut/Kembali besar (48px+), validasi form instan per langkah, indikator wajib isi (*)."
+    },
+    "admin_dashboard": {
+      "kpi_cards": [
+        "Total Responden",
+        "Responden Hari Ini",
+        "Responden Bulan Ini",
+        "Nilai IKM / SKM (Mutu Pelayanan A/B/C/D)",
+        "Kategori Pelayanan",
+        "Total Saran & Masukan"
+      ],
+      "charts": [
+        "Tren Responden Harian/Bulanan (Area Chart)",
+        "Distribusi Pekerjaan & Pendidikan (Bar / Pie Chart)",
+        "Skor Per Indikator Pelayanan (Horizontal Bar Chart)",
+        "Distribusi Nilai Rating / Kepuasan (Donut Chart)"
+      ],
+      "recent_table": "Tabel 5 Responden Terakhir dengan masking NIK/HP & badge status",
+      "automatic_summary": "Card Ringkasan Analisis IKM Otomatis (Performa tertinggi & indikator butuh perbaikan)"
+    },
+    "admin_features": {
+      "survey_builder": "Super Admin mengedit judul survei, deskripsi, masa aktif, status buka/tutup, logo instansi",
+      "question_builder": "Tambah, edit, hapus, dan drag/reorder pertanyaan & indikator bobot SKM",
+      "respondent_management": "Tabel lengkap responden, filter tanggal/pekerjaan, masking data sensitif, ekspor per baris atau batch",
+      "analytics_ikm": "Halaman khusus perhitungan formula IKM/SKM sesuai PerMenPAN-RB",
+      "reports_pdf_excel": "Export Laporan PDF siap cetak dengan Kop Surat Pemkab Buleleng & Export Excel CSV",
+      "backup_restore": "Backup JSON database & Restore data dengan verifikasi password",
+      "reset_data": "Reset survei/responden dengan modal konfirmasi ketat 2 langkah"
+    }
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "NOTE FOR REACT FILES: The project uses .js or .jsx file extension (NOT .tsx). Ensure imports match .js/.jsx syntax.",
+    "ALWAYS USE data-testid: Add data-testid='...' to all buttons, inputs, modals, table rows, tab triggers, and key metrics.",
+    "NON-TRANSPARENT BACKGROUNDS: Never use background transparent on floating menus, dropdowns, sticky headers, or modals. Always use solid white (#FFFFFF) with border (#E2E8F0) and shadow-lg.",
+    "FONT LOADING: Ensure Plus Jakarta Sans is loaded via HTML Google Fonts link or @import in index.css.",
+    "LARGE TOUCH TARGETS FOR PUBLIC SURVEY: Buttons in public survey must be min 48px height with clear active/focus states for accessibility.",
+    "DATA MASKING: Mask NIK (e.g., 510801******0001) and Phone Numbers (e.g., 0812****5678) in public-facing or default respondent lists with a toggle to unmask for authorized admin.",
+    "TOAST NOTIFICATIONS: Use Sonner for global toasts (e.g. toast.success('Survei berhasil dikirim!'), toast.error('...')).",
+    "SKELETON & LOADING STATES: Every chart, KPI card, and table must render skeleton loaders while data fetching."
+  ]
+}
